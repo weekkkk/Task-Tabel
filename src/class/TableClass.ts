@@ -5,7 +5,7 @@ export default class TableClass {
   constructor(rows: RowType[]) {
     this.rows = rows;
   }
-  addRow(row: RowType){
+  createRow(row: RowType){
     this.rows.push(row);
   }
 }

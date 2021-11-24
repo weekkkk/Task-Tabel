@@ -1,5 +1,4 @@
 <template>
-<form-row/>
 </template>
 
 <script lang="ts">

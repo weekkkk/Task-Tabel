@@ -15,7 +15,7 @@
   <my-input
   v-model="row.row.profession"
   />
-  <my-button>Добавить</my-button>
+  <my-button @click="createRow">Добавить</my-button>
 </div>
 </template>
 
@@ -38,7 +38,7 @@ export default class FormRow extends Vue {
     profession: "" 
   });
     
-  @Emit() createPost() {
+  @Emit() createRow() {
     this.row.row.id = Date.now();
     return Object.assign({}, this.row.row);
   }
